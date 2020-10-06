@@ -1,0 +1,157 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'books_App/normalize.css'%}">
+    <link rel="stylesheet" href="{% static 'books_App/grid.css'%}">
+    <link rel="stylesheet" href="{% static 'books_App/ionicons.min.css'%}">
+    
+    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}"> -->
+    <link rel="stylesheet" href="{% static 'books_App/master_css.css'%}">
+    <link rel="stylesheet" href="{% static 'books_App/queries.css'%}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <ul class="main-nav">
+                    <li><a href="{% url 'user_book' %}">Donate Books</a></li>
+                    <li><a href="{% url 'showInfo' %}">How it works</a></li>
+                    <!-- <li><a href="#">Sign Up</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+                <h1>GoodBye illiteracy<br> together let's create new India.</h1>
+                <a class="btn btn-full" href="{% url 'user_book' %}">I will help</a>
+                <a class="btn btn-ghost" href="{% url 'showInfo' %}">Show me more</a>
+        </div>
+    </header>
+
+
+    <section class="section-features">
+            <div class="row">
+                <h2>Help children, the easiest way</h2>
+                <p class="long-copy">
+                    Hello, we're TiroHelper , your premium books delivery and donations service. As you
+                     know you want to build the nation 
+                    a better place to live in, But might not be able to do  this all alone.
+                     So let us take care of that in easiest way possible.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3 box"> 
+                <i class="ion-settings  icon-big"></i>
+
+                    <h3>Consultant</h3>
+                    <p> I found the idea behind this concept, an excellent thing 
+                        required for upliftment of the nation.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <i class="ion-heart icon-big"></i>
+                    <h3>Advisor</h3>
+                    <p> TiroHelper , You are doing a good job a must needed thing, 
+                        in todays world.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <i class="ion-gear-b icon-big"></i>
+                    <h3>Analyst</h3>
+                    <p> If implemented the right way , the concept can do Wonders.
+                        Hope for a better future.
+                    </p>
+                </div>
+                
+            </div>
+    </section>
+    
+
+    <section class="section-m">
+            <ul class="m-showcase">
+                
+                <li>
+                    <figure class="m-photo">
+                        <img src="{% static 'books_App/images/1.jpg'%}" alt="consultant Angad Johar">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="m-photo">
+                        <img src="{% static 'books_App/images/2.jpg'%}" alt="Advisor Sohail ">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="m-photo">
+                        <img src="{% static 'books_App/images/3.jpg'%}" alt="Analyst Rakshita Singh">
+                    </figure>
+                </li>
+            </ul>
+    </section>
+
+
+    <section class="section-cities">
+      
+        <div class="row">
+                <h2> 
+                    We're currently in Dehradun
+                </h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-0f-2 box">
+                <img src="{% static 'books_App/images/3.jpg'%}" alt="Dehradun">
+                <h3>Dehradun</h3>
+                
+            </div>
+            <div class="col span-1-0f-2 box">
+                <img src="{% static 'books_App/images/3.jpg'%}" alt="dehradun">
+                <div class="city-feature ">
+                    <i class="ion-ios-person icon-small"></i>
+                    <strong>100+ Helpers</strong>
+                </div>
+                <div class="city-feature ">
+                    <i class="ion-ios-star icon-small"></i>
+                    <strong>  150+ Supporters</strong>
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#"><strong>@tiro_helpers</strong></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-testimonials">
+        <div class="row">
+            <h2>People Support Us  from all parts of the world</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    TiroHelpers are just awesome! They are doing good work , I hope they continue doing this for long!
+                    <cite><img src="{% static 'books_App/images/1a.jpg'%}" >Angad Johar</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    When i first came across this website, I was so impressed from the idea , the staff is good and they are always on time.
+                    <cite><img src="{% static 'books_App/images/2s.jpg'%}" >Sohail</cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    the sad part is they are limited to dehradun , hope they provide their service to all over India. until then best of luck
+                    tiroHelpers.
+                    <cite><img src="{% static 'books_App/images/3r.jpg'%}" >Rakshita Singh</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
