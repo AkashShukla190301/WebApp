@@ -12,9 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
-import dj_database_url
-from decouple import config
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'functional_App',
-    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'books_App.urls'
@@ -131,13 +127,11 @@ STATICFILES_DIRS=[
     STATIC_DIR
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT = MEDIA_DIR
 
 
-django_heroku.settings(locals())
 
 LOGIN_REDIRECT_URL='/'
 
