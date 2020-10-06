@@ -1,12 +1,12 @@
-asgiref @ file:///tmp/build/80754af9/asgiref_1594338739818/work
+asgiref==3.2.3
 bootstrap4==0.1.0
 certifi==2020.6.20
 dj-database-url==0.5.0
-Django @ file:///tmp/build/80754af9/django_1601563330930/work
+Django==3.1.2
 django-heroku==0.3.1
 gunicorn==20.0.4
 Pillow==7.2.0
-psycopg2 @ file:///C:/ci/psycopg2_1594305172475/work
+psycopg2==2.8.4
 python-decouple==3.3
 pytz==2020.1
 sqlparse==0.3.1
